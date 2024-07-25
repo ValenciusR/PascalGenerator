@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         StringBuilder sb = new StringBuilder();
         int[][] triangle = new int[n][];
 
-        // Build Pascal's Triangle
         for (int i = 0; i < n; i++) {
             triangle[i] = new int[i + 1];
             triangle[i][0] = 1;
@@ -52,20 +51,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        // Find the width of the largest row
-        int maxWidth = (n * 2) - 1; // Approximate width
-
-        // Build the string with center alignment
         for (int i = n - 1; i >= 0; i--) {
-            StringBuilder row = new StringBuilder();
             for (int j = 0; j < triangle[i].length; j++) {
-                row.append(triangle[i][j]).append(" ");
+                sb.append(triangle[i][j]).append(" ");
             }
-            // Center-align the row
-            String rowString = row.toString();
-            int spaces = (maxWidth - rowString.length()) / 2;
-            sb.append("  ".repeat(Math.max(0, spaces))); // Add leading spaces
-            sb.append(rowString.trim()).append("\n");
+            sb.append("\n");
         }
 
         return sb.toString();
