@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1064840523749",
+    "project_id": "technicaltestpascal",
+    "storage_bucket": "technicaltestpascal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064840523749:android:ad0dcd17d658a65657090c",
+        "android_client_info": {
+          "package_name": "com.example.technicaltest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9o6YrAkmYRH4uGjE4BLUTuPF3ydLiCrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
